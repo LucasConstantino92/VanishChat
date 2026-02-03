@@ -1,0 +1,46 @@
+name: unique_chat_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  web_socket_channel: ^3.0.1
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.1.1
+  uuid: ^4.4.0
+  cryptography: ^2.5.0
+  flutter_riverpod: ^3.2.0
+  flutter_dotenv: ^6.0.0
+  flutter_svg: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/logo.svg
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo_color.png"
+  adaptive_icon_background: "#1A237E"
+  adaptive_icon_foreground: "assets/logo_color.png"
